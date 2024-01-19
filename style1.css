@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/backg.png);
+    background-size: cover;
+    background-position: center top; /* Adjust this line to shift the image */
+    background-repeat: no-repeat;
+}
+
+.nav {
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: flex-start; /* Align at the start (top) of the container */
+    justify-content: space-between;
+}
+
+.title {
+    width: 130px;
+    cursor: pointer;
+    color: #ECE3CE;
+    text-transform: uppercase;
+    font-size: 25px;
+    top: 100px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 1280px;
+}
+
+.nav ul li {
+    margin: 20px 15px;
+    position: relative;
+    font-weight: bold;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #ECE3CE;
+    text-transform: uppercase;
+}
+
+.nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ECE3CE;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after {
+    width: 100%;
+}
+
+.profile-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    right: 0;
+    transition: ease 0.3s;
+}
+
+.profile-photo:hover {
+    box-shadow: 0 0 0 5px #ECE3CE;
+}
+
+.content {
+    position: absolute;
+    margin-left: 500px;
+    top: 40%;
+    text-align: center;
+}
+
+.subtitle {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #ECE3CE;
+    background-color: #023020;
+}
+
+.content h1 {
+    font-size: 100px;
+    position: relative;
+    color: #ECE3CE;
+    text-shadow: 10px 2px 5px #023020;
+}
